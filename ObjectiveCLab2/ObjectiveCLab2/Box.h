@@ -12,11 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Box : NSObject
 
-- (instancetype)initWithHeight: (float *) height andWidth: (float *) width andLength: (float *) length;
+- (instancetype)initWithHeight: (float) height andWidth: (float) width andLength: (float) length;
 
-- (float *) height;
-- (float *) width;
-- (float *) length;
+- (float) height;
+- (float) width;
+- (float) length;
+
+- (float) boxVolume;
+
+- (int) howManyBoxes: (Box *) box;
 
 @end
 

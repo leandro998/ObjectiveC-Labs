@@ -10,39 +10,46 @@
 #import "Box.h"
 
 @implementation Box {
-    float *_height;
-    float *_width;
-    float *_length;
+    float _height;
+    float _width;
+    float _length;
 }
 
-- (instancetype)initWithHeight: (float *) height andWidth: (float *) width andLength: (float *) length {
+- (instancetype)initWithHeight: (float) height andWidth: (float) width andLength: (float) length {
   self = [super init];
   if (self) {
-    _height = height;
-    _width = width;
-    _length = length;
+      _height = height;
+      _width = width;
+      _length = length;
   }
   return self;
 }
 
-- (float *) height {
+- (float) height {
     return _height;
 }
 
-- (float *) width {
+- (float) width {
     return _width;
 }
 
-- (float *) length {
+- (float) length {
     return _length;
 }
 
-// it doesn't allow to multiply:
+- (float) boxVolume {
+    float boxVolume = _height * _width * _length;
+    return boxVolume;
+}
 
-//- (float *) boxVolume {
-//    float boxVolume = self->_height * self->_width;
-//    return boxVolume;
-//}
+- (int) howManyBoxes: (Box *) box {
+    float myBox = [self boxVolume];
+    float otherBox = [box boxVolume];
+    if (myBox > otherBox){
+        return 0;
+    }
+    return (int) otherBox / myBox;
+}
 
 @end
 
