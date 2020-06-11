@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AdditionQuestion.h"
 
 NSString *getUserInput(int maxLength, NSString *prompt) {
     if (maxLength < 1) {
@@ -23,13 +24,15 @@ NSString *getUserInput(int maxLength, NSString *prompt) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        NSLog(@"Welcome to Math Game: ('q' to quit)\n");
         while (1) {
-            NSString *strInput = getUserInput(255, @"\nType your name to enter the Math Game: ('q' to quit)");
+            AdditionQuestion *question1 = [[AdditionQuestion alloc] init];
+            NSString *question = (@"The sum of %@", [question1 _question]);
+            NSString *strInput = getUserInput(255, question);
             if ([strInput isEqualToString:@"q"]) { break;}
-            while (1) {
-                NSString *question = getUserInput(255, @"What is the sum of the following numbers:\n");
-            }
+            
         }
     }
     return 0;
 }
+

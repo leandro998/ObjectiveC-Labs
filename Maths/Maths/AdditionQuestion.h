@@ -12,8 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AdditionQuestion : NSObject
 
-- (instancetype)init;
+// must create property to call the variable inside main.m
+@property NSString *_question;
+@property NSString *_answer;
 
+- (instancetype) init;
 
 @end
 
