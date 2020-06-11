@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11118692491B93A00ED69AB /* RightOrWrong.m in Sources */ = {isa = PBXBuildFile; fileRef = D11118682491B93A00ED69AB /* RightOrWrong.m */; };
 		D1FC2C3824904F8300FFB8EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC2C3724904F8300FFB8EF /* main.m */; };
 		D1FC2C4024905A4F00FFB8EF /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC2C3F24905A4F00FFB8EF /* AdditionQuestion.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D11118672491B93A00ED69AB /* RightOrWrong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightOrWrong.h; sourceTree = "<group>"; };
+		D11118682491B93A00ED69AB /* RightOrWrong.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightOrWrong.m; sourceTree = "<group>"; };
 		D1FC2C3424904F8300FFB8EF /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FC2C3724904F8300FFB8EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1FC2C3E24905A4F00FFB8EF /* AdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				D1FC2C3724904F8300FFB8EF /* main.m */,
+				D11118672491B93A00ED69AB /* RightOrWrong.h */,
+				D11118682491B93A00ED69AB /* RightOrWrong.m */,
 				D1FC2C3E24905A4F00FFB8EF /* AdditionQuestion.h */,
 				D1FC2C3F24905A4F00FFB8EF /* AdditionQuestion.m */,
 			);
@@ -126,6 +131,7 @@
 			files = (
 				D1FC2C3824904F8300FFB8EF /* main.m in Sources */,
 				D1FC2C4024905A4F00FFB8EF /* AdditionQuestion.m in Sources */,
+				D11118692491B93A00ED69AB /* RightOrWrong.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,4 +24,12 @@
     return self;
 }
 
+- (NSString *) showQuestion {
+    return _question;
+}
+
+- (NSInteger) correctAnswer {
+    return _answer;
+}
+
 @end

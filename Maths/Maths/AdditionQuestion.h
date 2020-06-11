@@ -12,11 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AdditionQuestion : NSObject
 
-// must create property to call the variable inside main.m
-@property NSString *_question;
-@property NSString *_answer;
+// must create getter on AdditionQuestion.m to be able to access the instance variable on main.m. If we create property (lines 16 and 17) we will not access correctly.
+//@property NSString *_question;
+//@property NSString *_answer;
 
 - (instancetype) init;
+
+- (NSString *) showQuestion;
+
+- (NSInteger) correctAnswer;
 
 @end
 
