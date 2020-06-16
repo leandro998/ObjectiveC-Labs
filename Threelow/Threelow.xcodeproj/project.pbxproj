@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14AD3BF249965A90000BEB2 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14AD3BE249965A90000BEB2 /* GameController.m */; };
 		D1B3A5B32498355600515F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B3A5B22498355600515F92 /* main.m */; };
 		D1B3A5BB249835AA00515F92 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B3A5BA249835AA00515F92 /* Dice.m */; };
 		D1B3A5BE2498368200515F92 /* UserInput.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B3A5BD2498368200515F92 /* UserInput.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D14AD3BD249965A90000BEB2 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		D14AD3BE249965A90000BEB2 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		D1B3A5AF2498355600515F92 /* Threelow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threelow; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B3A5B22498355600515F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1B3A5B9249835AA00515F92 /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				D1B3A5B22498355600515F92 /* main.m */,
+				D14AD3BD249965A90000BEB2 /* GameController.h */,
+				D14AD3BE249965A90000BEB2 /* GameController.m */,
 				D1B3A5BC2498368200515F92 /* UserInput.h */,
 				D1B3A5BD2498368200515F92 /* UserInput.m */,
 				D1B3A5B9249835AA00515F92 /* Dice.h */,
@@ -130,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1B3A5BB249835AA00515F92 /* Dice.m in Sources */,
+				D14AD3BF249965A90000BEB2 /* GameController.m in Sources */,
 				D1B3A5B32498355600515F92 /* main.m in Sources */,
 				D1B3A5BE2498368200515F92 /* UserInput.m in Sources */,
 			);
