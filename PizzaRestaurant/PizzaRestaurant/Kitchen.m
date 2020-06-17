@@ -10,9 +10,16 @@
 
 @implementation Kitchen
 
-/*- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
-{
+/*- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings {
     
 }*/
+
+-(NSString *) orderSize: myOrderSize {
+    return myOrderSize;
+}
+
+-(NSArray *) orderToppings: myOrderToppings {
+    return myOrderToppings;
+}
 
 @end

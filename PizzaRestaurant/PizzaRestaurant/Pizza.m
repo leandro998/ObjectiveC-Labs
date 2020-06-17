@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         _size = medium;
-        _toppings = [[NSArray alloc] initWithObjects:@"Peperoni", @"Cheese", nil];
+        _toppings = [[NSArray alloc] initWithObjects:@"Peperoni", @"Cheese", @"Ham", @"Pineapple", nil];
     }
     return self;
 }

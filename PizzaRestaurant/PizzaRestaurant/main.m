@@ -16,13 +16,13 @@ int main(int argc, const char * argv[]) {
 
     @autoreleasepool {
         
-        NSLog(@"Please pick your pizza size and toppings:");
-        
         Kitchen *restaurantKitchen = [Kitchen new];
         Pizza *newPizza = [Pizza new];
+
+        NSLog(@"Please pick your pizza size and toppings.\nAvailable toppings: %@", newPizza.toppings);
         
-        NSLog(@"size: %@", [newPizza pizzaSizeToString:large]);
-        NSLog(@"toppings: %@", newPizza.toppings);
+//        NSLog(@"size: %@", [newPizza pizzaSizeToString:large]);
+//        NSLog(@"toppings: %@", newPizza.toppings);
         
         while (TRUE) {
             // Loop forever
@@ -34,10 +34,19 @@ int main(int argc, const char * argv[]) {
             NSString *inputString = [[NSString alloc] initWithUTF8String:str];
             inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             
-            NSLog(@"Input was %@", inputString);
-            
             // Take the first word of the command as the size, and the rest as the toppings
             NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
+//            NSLog(@"your order is: %@", commandWords);
+            
+            for (int i = 0; i < commandWords.count; i++) {
+                if (i == 0) {
+                    NSString *myOrderSize = [restaurantKitchen orderSize:commandWords[i]];
+                    NSLog(@"order size sent to kitchen: %@", myOrderSize);
+                } else {
+                    NSArray *myOrderToppings = [restaurantKitchen orderToppings:commandWords[i]];
+                    NSLog(@"order topping sent to kitchen: %@", myOrderToppings);
+                }
+            } //finish for loop
             
             // And then send some message to the kitchen...
             
