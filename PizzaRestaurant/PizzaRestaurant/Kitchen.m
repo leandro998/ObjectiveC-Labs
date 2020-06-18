@@ -10,16 +10,30 @@
 
 @implementation Kitchen
 
-/*- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings {
-    
-}*/
-
 -(NSString *) orderSize: myOrderSize {
     return myOrderSize;
 }
 
 -(NSArray *) orderToppings: myOrderToppings {
     return myOrderToppings;
+}
+
+- (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)toppings {
+    if (toppings != NULL) {
+    return TRUE;
+    } else { return FALSE; };
+}
+
+-(BOOL)kitchenShouldUpgradeOrder: (Kitchen *)kitchen {
+    return FALSE;
+}
+
+-(void)kitchenDidMakePizza: (Pizza *) pizza {
+    if (pizza != NULL) {
+        NSLog(@"Pizza ready!");
+    } else {
+        NSLog(@"Pizza not done");
+    }
 }
 
 @end
