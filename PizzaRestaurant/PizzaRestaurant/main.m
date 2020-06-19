@@ -11,6 +11,10 @@
 
 #import "Kitchen.h"
 #import "Pizza.h"
+#import "Manager.h"
+#import "CheeryManager.h"
+#import "DeliveryService.h"
+#import "DeliveryCar.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -18,6 +22,9 @@ int main(int argc, const char * argv[]) {
         
         Kitchen *restaurantKitchen = [Kitchen new];
         Pizza *newPizza = [Pizza new];
+        Manager *manager = [Manager new];
+        CheeryManager *cheeryManager = [CheeryManager new];
+        DeliveryService *delivery = [DeliveryService new];
 
         NSLog(@"Please pick your pizza size and toppings.\nAvailable toppings: %@", newPizza.toppings);
         
@@ -37,6 +44,9 @@ int main(int argc, const char * argv[]) {
             // Take the first word of the command as the size, and the rest as the toppings
             NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
 //            NSLog(@"your order is: %@", commandWords);
+            
+            //how to make the manager and cheeryManager receive different orders?
+            NSLog(@"the log %hhd", [manager kitchen:restaurantKitchen shouldMakePizzaOfSize:commandWords[0] andToppings:commandWords[1]]);
             
             for (int i = 0; i < commandWords.count; i++) {
                 if (i == 0) {
